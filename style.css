@@ -1,0 +1,70 @@
+
+#text {
+    font-size: 30px;
+    text-align: center;
+}
+
+#calendar {
+    margin: 0 auto;
+    width: 600px;
+    height: 420px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+
+td,th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: #E6E6E6;
+}
+
+.arrow-box {
+    position: relative;
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.arrow {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: -30%;
+}
+
+
+
+.arrow::after,
+.arrow::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 15px;
+    transform: rotate(45deg);
+    margin-top: 73%;
+}
+
+.arrow::before {
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -33%;
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
